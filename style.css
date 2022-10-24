@@ -1,0 +1,154 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+
+     .container{
+  position: relative;
+
+  width: 100%;
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+  background: rgb(4, 4, 19);
+  transition: 0.5s;  
+  
+}    
+.container#blur.active{
+  filter: blur(20px);
+  pointer-events: none;
+  user-select: none;
+ }
+ .container.content{
+position: relative;
+max-width: 800px;
+ } 
+ 
+
+.container.content{
+  max-width: 100%;
+  display: block;
+}
+
+.logo-img{
+
+  width: 100px;
+  height: 100px;
+    margin:auto 10%;
+ padding: 10px 10px;
+  border-radius: 50%;
+
+}
+
+.main-card{ 
+   background-image: linear-gradient( to right,#01082e,#2d0b00);   
+   position: relative;
+   border-radius: 10px;
+  width: 50%;
+  max-height: 450px;
+    margin: 20vh 0; 
+
+ }
+
+
+
+.username{
+    box-sizing: border-box;
+    padding: 40px;
+    color: white;
+    text-align: center;
+  
+  
+}
+
+.success{
+   display: flex; 
+ justify-content: center;
+ align-items: center;
+ margin-top: 30px;
+ 
+}
+
+
+
+
+ .success p{
+  font-size: 25px;
+  font-weight: bold;
+  font-family: serif;
+  line-height: 20px;
+  color: white;
+  
+  
+}
+
+.success i {
+  
+  color: rgb(8, 211, 8);
+  font-size: 30px;
+  text-align: center;
+  padding: 10px;
+  
+ 
+
+}
+
+
+
+.username p{
+  font-family: serif;
+  font-size: 20px;
+  line-height: 30px;
+  color: white;
+  text-align: center;
+}
+
+
+
+
+a{
+  position: relative;
+  padding:5px 10px;
+  display: inline-block;
+  margin-top: 20px;
+  text-decoration: none;
+  color: white;
+  background: gray;
+  transition: 1s;
+  border-bottom: 5px solid white;
+  background-color: orange;
+  font-weight: bold;
+  font-family: serif;
+
+}
+
+a:hover{
+  transition: 1s;
+  background-color: rgb(207, 197, 197);
+} 
+
+   
+
+  #popup{
+  position: fixed;
+  /* top:40%; */
+   left:50%; 
+  transform: translate(-50%,-50%);
+  width: 600px;
+   padding: 50px; 
+  box-shadow: 0 5px 30px rgb(0,0, 0,.30);
+  background:white;
+   visibility: hidden; 
+  opacity: 0;
+  transition: 0.5s;
+
+}
+#popup.active{
+  top:50%;
+  visibility: visible;
+  opacity: 1;
+  transition: 0.5s; 
+} 
